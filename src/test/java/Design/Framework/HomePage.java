@@ -35,12 +35,14 @@ public class HomePage extends base {
 		lp.getEmail().sendKeys(username);
 		lp.getPassword().sendKeys(password);
 		lp.getForgetPassword().click();
-		
+		System.out.println("Hello all , i am manipulated once");
         
 	}
     
 	@DataProvider
 	public Object[][] getData() {
+		
+		System.out.println("Hello all , i am inside data provider");
 		Object[][] data = new Object[2][2];
 
 		data[0][0] = "pooja";

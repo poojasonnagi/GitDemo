@@ -14,14 +14,19 @@ public class LandingPage {
 
 	public LandingPage(WebDriver driver) {
 		this.driver = driver;
+		
 	}
-
+     
+	
 	public WebElement getLogin() {
 		return driver.findElement(signin);
+		
 	}
 
 	public WebElement getTitle() {
+		
 		return driver.findElement(text);
+		
 	}
 
 	public WebElement getContext() {

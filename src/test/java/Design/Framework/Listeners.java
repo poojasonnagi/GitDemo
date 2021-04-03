@@ -20,14 +20,14 @@ public class Listeners extends base implements ITestListener{
     ThreadLocal<ExtentTest> extentTest=new ThreadLocal<ExtentTest>();
 	@Override
 	public void onFinish(ITestContext context) {
-	
+	  System.out.println("Flush me");
 		extent.flush();
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Tell once started");
 	}
 
 
